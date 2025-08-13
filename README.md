@@ -1,15 +1,17 @@
 # cheminfo-build
 
-[![NPM version][npm-image]][npm-url]
-[![build status][ci-image]][ci-url]
-[![Test coverage][codecov-image]][codecov-url]
-[![npm download][download-image]][download-url]
+[![NPM version](https://img.shields.io/npm/v/cheminfo-build.svg)](https://www.npmjs.com/package/cheminfo-build)
+[![npm download](https://img.shields.io/npm/dm/cheminfo-build.svg)](https://www.npmjs.com/package/cheminfo-build)
+[![test coverage](https://img.shields.io/codecov/c/github/cheminfo/cheminfo-build.svg)](https://codecov.io/gh/cheminfo/cheminfo-build)
+[![license](https://img.shields.io/npm/l/cheminfo-build.svg)](https://github.com/cheminfo/cheminfo-build/blob/main/LICENSE)
 
 CLI tool to build ChemInfo packages.
 
 ## Installation
 
-`$ npm i cheminfo-build`
+```console
+npm install -D cheminfo-build
+```
 
 ## Usage
 
@@ -23,12 +25,3 @@ const result = myModule(args);
 ## License
 
 [MIT](./LICENSE)
-
-[npm-image]: https://img.shields.io/npm/v/cheminfo-build.svg
-[npm-url]: https://www.npmjs.com/package/cheminfo-build
-[ci-image]: https://github.com/cheminfo/cheminfo-build/workflows/Node.js%20CI/badge.svg?branch=main
-[ci-url]: https://github.com/cheminfo/cheminfo-build/actions?query=workflow%3A%22Node.js+CI%22
-[codecov-image]: https://img.shields.io/codecov/c/github/cheminfo/cheminfo-build.svg
-[codecov-url]: https://codecov.io/gh/cheminfo/cheminfo-build
-[download-image]: https://img.shields.io/npm/dm/cheminfo-build.svg
-[download-url]: https://www.npmjs.com/package/cheminfo-build

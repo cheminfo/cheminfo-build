@@ -1,28 +1,40 @@
 {
   "name": "cheminfo-build",
   "version": "0.0.0",
+  "license": "MIT",
   "description": "CLI tool to build ChemInfo packages",
-  "type": "module",
-  "exports": "./lib/index.js",
   "keywords": [],
   "author": "Michaël Zasso",
-  "license": "MIT",
+  "type": "module",
+  "exports": "./lib/index.js",
   "files": [
-    "src",
-    "lib"
+    "lib",
+    "src"
   ],
   "scripts": {
     "check-types": "tsc --noEmit",
-    "clean": "rimraf lib",
-    "eslint": "eslint src --cache",
-    "eslint-fix": "npm run eslint -- --fix",
+    "clean": "rimraf coverage lib",
+    "eslint": "eslint .",
+    "eslint-fix": "eslint . --fix",
     "prepack": "npm run tsc",
-    "prettier": "prettier --check src",
-    "prettier-write": "prettier --write src",
-    "test": "npm run test-only && npm run eslint && npm run prettier && npm run check-types",
-    "test-only": "vitest --run --coverage",
+    "prettier": "prettier --check .",
+    "prettier-write": "prettier --write .",
+    "test": "npm run test-only && npm run check-types && npm run eslint && npm run prettier",
+    "test-only": "vitest run --coverage",
     "tsc": "npm run clean && npm run tsc-build",
     "tsc-build": "tsc --project tsconfig.build.json"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "@types/node": "^24.2.1",
+    "@vitest/coverage-v8": "^3.2.4",
+    "@zakodium/tsconfig": "^1.0.2",
+    "eslint": "^9.33.0",
+    "eslint-config-cheminfo-typescript": "^19.0.0",
+    "prettier": "^3.6.2",
+    "rimraf": "^6.0.1",
+    "typescript": "^5.9.2",
+    "vitest": "^3.2.4"
   },
   "repository": {
     "type": "git",
@@ -31,16 +43,5 @@
   "bugs": {
     "url": "https://github.com/cheminfo/cheminfo-build/issues"
   },
-  "homepage": "https://github.com/cheminfo/cheminfo-build#readme",
-  "devDependencies": {
-    "@types/node": "^24.2.1",
-    "@vitest/coverage-istanbul": "^3.2.4",
-    "@zakodium/tsconfig": "^1.0.2",
-    "eslint": "^9.33.0",
-    "eslint-config-cheminfo-typescript": "^19.0.0",
-    "prettier": "^3.6.2",
-    "rimraf": "^6.0.1",
-    "typescript": "^5.9.2",
-    "vitest": "^3.2.4"
-  }
+  "homepage": "https://github.com/cheminfo/cheminfo-build#readme"
 }
