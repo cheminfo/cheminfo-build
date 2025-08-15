@@ -106,7 +106,7 @@ async function writeBundles(
   const minifySuffix = minify ? '.min' : '';
   // UMD / CommonJS build.
   await rollupBuild.write({
-    file: path.join(output, `${outName}${minifySuffix}.umd.cjs`),
+    file: path.join(output, `${outName}.umd${minifySuffix}.cjs`),
     format: 'umd',
     name: rootName,
     banner,
@@ -114,7 +114,7 @@ async function writeBundles(
   });
   // ESM build.
   await rollupBuild.write({
-    file: path.join(output, `${outName}${minifySuffix}.esm.mjs`),
+    file: path.join(output, `${outName}.esm${minifySuffix}.mjs`),
     format: 'esm',
     banner,
     sourcemap: sourceMap,
