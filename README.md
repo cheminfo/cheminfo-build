@@ -15,12 +15,19 @@ npm install -D cheminfo-build
 
 ## Usage
 
-```js
-import { myModule } from 'cheminfo-build';
-
-const result = myModule(args);
-// result is ...
+```console
+cheminfo-build <options>
 ```
+
+### options
+
+- `-c, --cwd`: directory of the project to build. Defaults to the current working directory.
+- `-e, --entry`: entry point of the library. Default: "exports", or "module", or "main" field from package.json, or "lib/index.js", or "src/index.js" if it exists.
+- `-o, --out`: directory where to put the build files. Default: dist
+- `-n, --out-name`: name of the output file. Default: "name" field from package.json
+- `-r, --root`: root name of the library. Default: name of npm package (camelCase)
+- `--no-minify`: Disable generation of minified files.
+- `--no-source-map`: Disable generation of source maps.
 
 ## License
 
