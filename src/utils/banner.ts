@@ -14,7 +14,7 @@ export function getFullBanner(pkg: PackageJson) {
   if (pkg.homepage) {
     result.push(` * ${pkg.homepage}`);
   }
-  result.push(' *', ` * Licensed under the  ${pkg.license} license.`, ' */');
+  result.push(' *', ` * Licensed under the ${pkg.license} license.`, ' */');
   return result.join('\n');
 }
 
