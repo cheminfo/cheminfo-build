@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.1](https://github.com/cheminfo/cheminfo-build/compare/v1.3.0...v1.3.1) (2025-08-19)
+
+
+### Bug Fixes
+
+* remove extra space in full license banner ([#3](https://github.com/cheminfo/cheminfo-build/issues/3)) ([f77a11e](https://github.com/cheminfo/cheminfo-build/commit/f77a11eb75dc849ff9c61962c9f9f59179b026cd))
+
 ## 1.3.0 (2025-08-15)
 
 
