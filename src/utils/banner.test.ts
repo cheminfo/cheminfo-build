@@ -26,7 +26,7 @@ describe('getFullBanner', () => {
        * This is a test package
        * https://example.com
        *
-       * Licensed under the  MIT license.
+       * Licensed under the MIT license.
        */"
     `);
   });
@@ -36,7 +36,7 @@ describe('getFullBanner', () => {
       "/*
        * my-package v1.0.0
        *
-       * Licensed under the  MIT license.
+       * Licensed under the MIT license.
        */"
     `);
   });
@@ -47,7 +47,7 @@ describe('getFullBanner', () => {
        * my-package v1.0.0
        * This is a test package
        *
-       * Licensed under the  MIT license.
+       * Licensed under the MIT license.
        */"
     `);
   });
@@ -58,7 +58,7 @@ describe('getFullBanner', () => {
        * my-package v1.0.0
        * https://example.com
        *
-       * Licensed under the  MIT license.
+       * Licensed under the MIT license.
        */"
     `);
   });
