@@ -1,5 +1,12 @@
 # Changelog
 
+## [1.3.2](https://github.com/cheminfo/cheminfo-build/compare/v1.3.1...v1.3.2) (2025-12-15)
+
+
+### Bug Fixes
+
+* update dependencies ([#5](https://github.com/cheminfo/cheminfo-build/issues/5)) ([ca5b895](https://github.com/cheminfo/cheminfo-build/commit/ca5b895b326734c4d3509a0970e0ab2d467a5a09))
+
 ## [1.3.1](https://github.com/cheminfo/cheminfo-build/compare/v1.3.0...v1.3.1) (2025-08-19)
 
 
