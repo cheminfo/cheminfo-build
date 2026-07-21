@@ -12,9 +12,9 @@ describe('parsePackageJson', () => {
   });
 
   it('should throw for missing fields', () => {
-    expect(() =>
-      parsePackageJson('{"name":"test","version":"1.2.3"}'),
-    ).toThrowError(/license/);
+    expect(() => parsePackageJson('{"name":"test","version":"1.2.3"}')).toThrow(
+      /license/,
+    );
   });
 });
 
