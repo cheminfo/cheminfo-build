@@ -1,6 +1,6 @@
 {
   "name": "cheminfo-build",
-  "version": "1.3.2",
+  "version": "1.4.0",
   "license": "MIT",
   "description": "CLI tool to build ChemInfo packages",
   "keywords": [],
